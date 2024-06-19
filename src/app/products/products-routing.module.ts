@@ -8,7 +8,6 @@ const routes: Routes = [
     children:[
       { path: 'product', component: ProductPageComponent },
       { path: '**', redirectTo: 'product'}
-
     ]
   }
 ];
