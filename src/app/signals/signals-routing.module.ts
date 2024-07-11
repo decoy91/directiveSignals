@@ -12,7 +12,7 @@ const routes: Routes = [
     children:[
       {path:'counter', component: CounterPageComponent},
       {path:'user-info', component: UserInfoPageComponent},
-      {path:'Properties', component: PropertiesPageComponent},
+      {path:'properties', component: PropertiesPageComponent},
       {path:'**', redirectTo: 'counter'},
     ]
   }
