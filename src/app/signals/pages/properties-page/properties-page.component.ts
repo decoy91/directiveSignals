@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, effect, signal } from '@angular/core';
 import { User } from '../../interfaces/user-request.interface';
 
 @Component({
@@ -14,6 +14,12 @@ export class PropertiesPageComponent {
     last_name: 'Weaver',
     avatar: 'https://reqres.in/img/faces/2-image.jpg'
   })
+
+  public userChangedEffect = effect(() =>{
+
+    console.log('Disparo del trigger')
+
+  });
 
   onFieldUpdate(field: string, value:string){
 
